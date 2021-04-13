@@ -1,0 +1,580 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f2f7;
+    height: 1450px;
+}
+
+.mainHeading {
+    margin-top: 20px;
+    display: absolute;
+    padding-left: 300px;
+    width: 100%;
+}
+
+.mainHeading h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.mainHeading h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.message {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    position: absolute;
+    left: 950px;
+    top: 20px;
+}
+
+.notification {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    position: absolute;
+    left: 1020px;
+    top: 18px;
+}
+
+.avatar {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 1100px;
+    top: 18px;
+}
+
+.memory {
+    background-color: white;
+    position: absolute;
+    width: 260px;
+    height: 190px;
+    border-radius: 2em;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 50px 20px 20px 300px;
+}
+
+.memory h3 {
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.memory h2 {
+    font-weight: 600;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.memory #positivo25 {
+    margin-top: 45px;
+    color: #00a389;
+}
+#memory-chart {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: -70px;
+}
+
+.visitors {
+    background-color: white;
+    position: absolute;
+    width: 260px;
+    height: 190px;
+    border-radius: 2em;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 50px 20px 20px 600px;
+}
+.visitors h3 {
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.visitors h2 {
+    font-weight: 600;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.visitors #negativo44 {
+    margin-top: 30px;
+}
+.visitors #vector3 {
+    position: absolute;
+    margin-left: 110px;
+    margin-top: -60px;
+}
+
+
+.new-users {
+    background-color: white;
+    position: absolute;
+    width: 260px;
+    height: 190px;
+    border-radius: 2em;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 50px 20px 20px 900px;
+}
+.new-users h3 {
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.new-users h2 {
+    font-weight: 600;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.new-users #positivo25 {
+    margin-top: 30px;
+}
+.new-users #vector4 {
+    position: absolute;
+    margin-left: 110px;
+    margin-top: -60px;
+}
+
+.server-request {
+    background-color: white;
+    position: absolute;
+    width: 860px;
+    height: 280px;
+    border-radius: 2em;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 280px 20px 20px 300px;
+}
+
+.visitor-chart {
+    width: 860px;
+    height: 390px;
+    position: absolute;
+    margin: 600px 20px 20px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.visitors-2, .chart-summary {
+    background-color: white;
+    width: 48%;
+    display: flex;
+    border-radius: 2em;
+}
+.visitors-2 h3 {
+    padding: 25px 0px 15px 25px;
+    font-weight: 500;
+    font-size: 22px;
+}
+.visitors-2 h2 {
+    font-weight: 400;
+    position: absolute;
+    padding: 60px 0 0 25px;
+    font-size: 36px;
+    color: #00a389;
+}
+.visitors-2 h4 {
+    padding: 65px 0 0 200px;
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+}
+.visitors-2 h5 {
+    padding: 85px 0 0 200px;
+    position: absolute;
+    font-weight: 500;
+    font-size: 12px;
+}
+.visitors-2 p {
+    padding: 30px 0px 0px 200px;
+    font-size: 12px;
+    color:  #ab54db;
+    font-weight: 600;
+}
+.visitors-2 img {
+    width: 415px;
+    position: absolute;
+    padding: 120px 10px 10px 10px;
+}
+
+.chart-summary img {
+    padding: 10px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-review {
+    width: 860px;
+    height: 280px;
+    position: absolute;
+    margin: 1030px 20px 20px 300px;
+}
+.user-review h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.user-review h4 {
+    color: #a3a3a3;
+    font-weight: 400;
+    font-size: 12px;
+}
+.user-review .navigation-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding: 8px 6px;
+    display: flex;
+    justify-content: center;
+    fill: #ad59dc;
+    border-radius: 0.7em;
+}
+.user-review-left {
+    position: absolute;
+    margin: -40px 0px 0px 785px;
+}
+.user-review-rigth {
+    position: absolute;
+    margin: -40px 0px 0px 825px;
+}
+
+.user-review .navigation-button:focus, .user-review .navigation-button:active {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.user-review .navigation-button:hover {
+    background: #ad59dc30;
+    transition: 0.5s;
+}
+.user-cards-div {
+    display: flex;
+    justify-content: space-between;
+    height: 225px;
+    margin-top: 20px;
+}
+.user-card {
+    background-color: white;
+    width: 30%;
+    border-radius: 1.5em;
+    display: flex;
+}
+.user-card img {
+    height: 60px;
+    margin: 20px 15px 10px 20px;
+}
+.user-card h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 25px 10px 5px 95px;
+    position: absolute;
+}
+.user-card h4 {
+    font-weight: 500;
+    font-size: 12px;
+    margin: 55px 10px 5px 95px;
+    position: absolute;
+    color: #a3a3a3;
+}
+.user-card p {
+    font-size: 12px;
+    margin: 95px 10px 30px -70px;
+    line-height: 1.7;
+}
+.button-archive {
+    position: absolute;
+    margin: 185px 0 0 15px;
+    border: none;
+    cursor: pointer;
+    color: #ff5b5b;
+    background: transparent;
+    transition: background 0.5s;
+    box-sizing: content-box;
+    padding: 5px 10px;
+    border-radius: 1em;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.button-accept {
+    position: absolute;
+    margin: 185px 0 0 80px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #00a389;
+    transition: background 0.5s;
+    box-sizing: content-box;
+    padding: 5px 10px;
+    border-radius: 1em;
+    font-weight: 600;
+    font-size: 12px;
+}
+.button-published {
+    display: flex;
+    position: absolute;
+    margin: 185px 0 0 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #00a389;
+    transition: background 0.5s;
+    box-sizing: content-box;
+    padding: 5px 10px;
+    justify-content: center;
+    border-radius: 1em;
+    font-weight: 600;
+    font-size: 12px;
+}
+.button-published svg {
+    margin-left: 10px;
+}
+.user-card button:focus, .user-card button:active {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.button-archive:hover {
+    background: #ff5b5b50;
+    transition: 0.5s;
+}
+.button-accept:hover {
+    background: #00a38950;
+    transition: 0.5s;
+}
+.button-published:hover {
+    background: #00a38950;
+    transition: 0.5s;
+}
+
+.left-sidebar {
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    border-radius: 2em;
+    margin: 25px;
+    margin-top: 10px;
+}
+.menu {
+    width: 250px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+.menu h1 {
+    font-size: 32px;
+    height: 40px;
+}
+.menu h3 {
+    font-weight: 400;
+    font-size: 12px;
+}
+.logo {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+}
+.logo-text {
+    width: 59%;
+    height: 100%;
+    padding-left: 10px;
+}
+.logo-text h3 {
+    padding-top: 5px;
+    color: #969696;
+    font-size: 10px;
+}
+.logo-svg {
+    width: 40%;
+    height: 100%;
+    padding-left: 35px;
+}
+
+
+.itens {
+    width: 80%;
+    margin: auto;
+    height: 60px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 1.5em;
+    transition: background-color 0.5s;
+}
+
+.itens:hover {
+    background-color: #ab54db30;
+    color: #ab54db;
+    transition: 0.5s;
+}
+.itens:hover svg {
+    fill: #ab54db;
+    transition: 0.5s;
+}
+.itens h3 {
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: 500;
+    color: black;
+    transition: color 0.5s;
+}
+.itens:hover h3 {
+    color: #ab54db;
+    transition: 0.5s;
+}
+.itens svg {
+    float: left;
+    margin: 8px 20px 6px 20px;
+    height: 24px;
+    width: 24px;
+    fill: #bdbebf;
+    transition: fill 0.5s;
+}
+
+.footer {
+    padding: 40px 0px 40px 20px;
+}
+.footer p {
+    padding-top: 5px;
+    height: 40px;
+    font-size: 12px;
+}
+
+
+.right-sidebar {
+    width: 340px;
+    position: relative;
+    margin-left: 1170px;
+    margin-top: -70px;
+}
+.search {
+    text-align: center;
+    height: 50px;
+    width: 280px;
+    background: #eceaf3;
+    border: none;
+    border-radius: 1em;
+    margin-left: 30px;
+    display: flex;
+}
+.search input[type=text] {
+    font-size: 12px;
+    color: black;
+    width: 80%;
+    padding-left: 20px;
+    background:transparent;
+    border: none;
+
+}
+.search button {
+    width: 18%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search button:focus, .search button:active {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.search input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.loupe {
+    margin-top: 5px;
+}
+
+.graphic {
+    width: 320px;
+    margin: 30px 05px;
+}
+.graphic h3, .problems h3 {
+    font-weight: 600;
+    margin-left: 10px;
+}
+.graphic h4, .problems h4 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #a3a3a3;
+    margin-left: 10px;
+}
+
+.problems {
+    display: block;
+}
+.recent-problems {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    width: 100%;
+}
+.problem-logo {
+    background-color: white;
+    border-radius: 1em;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 15px;
+}
+.problem-info {
+    margin-left: -15px;
+}
+.problem-info h4 {
+    padding-top: 7px;
+}
+
+.problem-status {
+    box-sizing: content-box;
+    padding: 10px 20px;
+    background-color: #ff5b5b;
+    border-radius: 0.8em;
+    margin-left: auto;
+}
+.problem-status h3 {
+    margin: 0px;
+    font-size: 14px;
+    color: white;
+}
+.stable {
+    background-color: #00a389;
+}
+.warning {
+    background-color: #ffbb54;
+}
+
+.latest-activity {
+    margin-top: 30px;
+}
+.latest-activity img {
+    margin-top: 20px;
+    width: 95%;
+}
+.latest-activity h3 {
+    font-weight: 600;
+    margin-left: 10px;
+}
+.latest-activity h4 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #a3a3a3;
+    margin-left: 10px;
+}
+
