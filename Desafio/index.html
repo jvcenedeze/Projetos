@@ -186,23 +186,30 @@
                     <div class="memory">
                         <h3>Memory</h3>
                         <h2>200TB</h2>
-                        <canvas id="memory-chart" style="width: 90px; height: 90px"></canvas>
+                        <div class="chart-container">
+                            <canvas id="memory-chart"></canvas>
+                        </div>
                         <h4 id="positivo25">+2,5%</h4>
                     </div>
                     <div class="visitors">
                         <h3>Visitors</h3>
                         <h2>87,524K</h2>
-                        <img id="vector3" src="image/vector3.png" alt="Gráfico">
-                        <img id="negativo44" src="image/negativo44.png" alt="-4,4%" height="14px">
+                        <div class="chart-container">
+                            <canvas id="visitors-chart"></canvas>
+                        </div>
+                        <h4 id="negativo44">-4,4%</h4>
                     </div>
                     <div class="new-users">
                         <h3>New Users</h3>
                         <h2>4,750</h2>
-                        <img id="vector4" src="image/vector4.png" alt="Gráfico">
-                        <img id="positivo25" src="image/positivo25.png" alt="+2,5%" height="14px">
+                        <div class="chart-container">
+                            <canvas id="new-users-chart"></canvas>
+                        </div>
+                        <h4 id="positivo25">+2,5%</h4>
                     </div>
                     <div class="server-request">
-                        <img src="image/server-request.PNG" alt="Server Resquest" width="830px">
+                        <h3>Server Request</h3>
+                        <canvas id="server-request-chart"></canvas>
                     </div>
                 </div>
                 <div class="visitor-chart">
@@ -212,10 +219,19 @@
                         <h4>+0.4%</h4>
                         <h5>Than last week</h5>
                         <p>View more</p>
-                        <img src="image/visitors-2.PNG" alt="Visitors">
+                        <div class="visitors2-chart-container">
+                            <canvas id="visitors2-chart"></canvas>
+                        </div>
                     </div>
                     <div class="chart-summary">
-                        <img src="image/chart-summary.PNG" alt="Chart Summary">
+                        <h3>Chart Summary</h3>
+                        <h4>Download Report</h4>
+                        <div class="chart-summary-container">
+                            <canvas id="summary-chart"></canvas>
+                        </div>
+                        <p id="fixed-server-number">942</p>
+                        <p id="down-servers-number">25</p>
+                        <p id="running-number">2,452</p>
                     </div>
                 </div>
                 <div class="user-review">

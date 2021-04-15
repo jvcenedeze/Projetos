@@ -79,11 +79,14 @@ body {
 .memory #positivo25 {
     margin-top: 45px;
     color: #00a389;
+    font-weight: 600;
 }
-#memory-chart {
+.chart-container {
     position: absolute;
-    margin-left: 90px;
-    margin-top: -70px;
+    margin-left: 110px;
+    margin-top: -75px;
+    width: 100px;
+    height: 85px;
 }
 
 .visitors {
@@ -108,13 +111,11 @@ body {
     margin-bottom: 20px;
 }
 .visitors #negativo44 {
-    margin-top: 30px;
+    margin-top: 45px;
+    color: #ff5b5b;
+    font-weight: 600;
 }
-.visitors #vector3 {
-    position: absolute;
-    margin-left: 110px;
-    margin-top: -60px;
-}
+
 
 
 .new-users {
@@ -139,13 +140,11 @@ body {
     margin-bottom: 20px;
 }
 .new-users #positivo25 {
-    margin-top: 30px;
+    margin-top: 45px;
+    color: #00a389;
+    font-weight: 600;
 }
-.new-users #vector4 {
-    position: absolute;
-    margin-left: 110px;
-    margin-top: -60px;
-}
+
 
 .server-request {
     background-color: white;
@@ -153,9 +152,14 @@ body {
     width: 860px;
     height: 280px;
     border-radius: 2em;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px;
     margin: 280px 20px 20px 300px;
+}
+.server-request h3 {
+    position: absolute;
+    margin: 10px 0 0 20px;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .visitor-chart {
@@ -174,7 +178,7 @@ body {
 }
 .visitors-2 h3 {
     padding: 25px 0px 15px 25px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 22px;
 }
 .visitors-2 h2 {
@@ -197,23 +201,51 @@ body {
     font-size: 12px;
 }
 .visitors-2 p {
-    padding: 30px 0px 0px 200px;
+    padding: 30px 0px 0px 210px;
     font-size: 12px;
     color:  #ab54db;
     font-weight: 600;
 }
-.visitors-2 img {
-    width: 415px;
+.visitors2-chart-container {
+    width: 390px;
+    height: 220px;
     position: absolute;
-    padding: 120px 10px 10px 10px;
+    margin: 140px 0 0 10px;
 }
 
-.chart-summary img {
-    padding: 10px;
-    padding-left: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.chart-summary-container {
+    margin: 80px 0 0 30px;
+    position: absolute;
+    height: 250px;  
+    width: 350px;
+}
+.chart-summary h3 {
+    margin: 30px 0 0 30px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 22px;
+}
+.chart-summary h4 {
+    margin: 35px 0px 0px 280px;
+    font-size: 12px;
+    color:  #ab54db;
+    font-weight: 600;
+    position: absolute;
+}
+#fixed-server-number, #down-servers-number, #running-number {
+    position: absolute;
+    margin-top: 330px;
+    font-size: 28px;
+    font-weight: 600;
+}
+#fixed-server-number {
+    margin-left: 70px;
+}
+#down-servers-number {
+    margin-left: 190px;
+}
+#running-number {
+    margin-left: 285px;
 }
 
 .user-review {
@@ -239,8 +271,16 @@ body {
     padding: 8px 6px;
     display: flex;
     justify-content: center;
-    fill: #ad59dc;
     border-radius: 0.7em;
+    transition: background-color 0.5s;
+}
+.navigation-button svg {
+    fill: #ad59dc50;
+    transition: fill 0.5s;
+}
+.navigation-button:hover svg {
+    fill: #ad59dc;
+    transition: fill 0.5s;
 }
 .user-review-left {
     position: absolute;
@@ -257,7 +297,7 @@ body {
     outline: 0;
 }
 .user-review .navigation-button:hover {
-    background: #ad59dc30;
+    background-color: #ad59dc30;
     transition: 0.5s;
 }
 .user-cards-div {
