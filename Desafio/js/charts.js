@@ -18,14 +18,14 @@ async function chartIt() {
     let memoryChart = new Chart(document.getElementById("memory-chart"), {
         type: 'line',
         data: {
-            labels: xMemory,
+            labels: ['1','2','3','4','5','6','7','8','9','10','11'],
             datasets: [
                 {
                     label: 'Memory',
                     borderColor: '#00a389',
                     cubicInterpolationMode: 'default',
                     tension: 0.4,
-                    data: memory
+                    data: [5,4,5,1,6,4,7,2.8,5,4.7,6]
                 }
             ]
         },
