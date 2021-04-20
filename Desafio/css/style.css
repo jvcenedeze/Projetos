@@ -554,6 +554,10 @@ body {
     color: #a3a3a3;
     margin-left: 10px;
 }
+.server-status-container {
+    margin-top: 20px;
+    height: 250px;
+}
 
 .problems {
     display: block;
