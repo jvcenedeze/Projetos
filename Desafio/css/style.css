@@ -30,19 +30,65 @@ body {
 .message {
     height: 50px;
     width: 50px;
-    display: flex;
     position: absolute;
-    left: 950px;
-    top: 20px;
+    left: 940px;
+    top: 35px;
+}
+.message span {
+    background-color: #ffbb54;
+    border: 2px solid #f3f2f7;
+    border-radius: 0.8em;
+    box-sizing: content-box;
+    width: 14px;
+    height: 14px;
+    padding: 5px;
+    position: absolute;
+    color: white;
+    margin: -34px 0 0 32px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.message button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: content-box;
+    padding: 5px;
 }
 
 .notification {
     height: 50px;
     width: 50px;
-    display: flex;
     position: absolute;
-    left: 1020px;
-    top: 18px;
+    left: 1010px;
+    top: 35px;
+}
+.notification span {
+    background-color: #58cdff;
+    border: 2px solid #f3f2f7;
+    border-radius: 0.8em;
+    box-sizing: content-box;
+    width: 14px;
+    height: 14px;
+    padding: 5px;
+    position: absolute;
+    color: white;
+    margin: -34px 0 0 32px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.notification button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: content-box;
+    padding: 5px;
 }
 
 .avatar {
@@ -50,7 +96,7 @@ body {
     width: 60px;
     display: flex;
     position: absolute;
-    left: 1100px;
+    left: 1090px;
     top: 18px;
 }
 
@@ -97,7 +143,7 @@ body {
     border-radius: 2em;
     padding-top: 30px;
     padding-left: 30px;
-    margin: 50px 20px 20px 600px;
+    margin: 50px 20px 20px 595px;
 }
 .visitors h3 {
     height: 30px;
@@ -126,7 +172,7 @@ body {
     border-radius: 2em;
     padding-top: 30px;
     padding-left: 30px;
-    margin: 50px 20px 20px 900px;
+    margin: 50px 20px 20px 890px;
 }
 .new-users h3 {
     height: 30px;
@@ -149,7 +195,7 @@ body {
 .server-request {
     background-color: white;
     position: absolute;
-    width: 860px;
+    width: 850px;
     height: 280px;
     border-radius: 2em;
     padding: 10px;
@@ -163,7 +209,7 @@ body {
 }
 
 .visitor-chart {
-    width: 860px;
+    width: 850px;
     height: 390px;
     position: absolute;
     margin: 600px 20px 20px 300px;
@@ -234,9 +280,10 @@ body {
 }
 #fixed-server-number, #down-servers-number, #running-number {
     position: absolute;
-    margin-top: 330px;
+    margin-top: 325px;
     font-size: 28px;
     font-weight: 600;
+    color: black;
 }
 #fixed-server-number {
     margin-left: 70px;
@@ -249,7 +296,7 @@ body {
 }
 
 .user-review {
-    width: 860px;
+    width: 850px;
     height: 280px;
     position: absolute;
     margin: 1030px 20px 20px 300px;
@@ -284,11 +331,11 @@ body {
 }
 .user-review-left {
     position: absolute;
-    margin: -40px 0px 0px 785px;
+    margin: -40px 0px 0px 775px;
 }
 .user-review-rigth {
     position: absolute;
-    margin: -40px 0px 0px 825px;
+    margin: -40px 0px 0px 815px;
 }
 
 .user-review .navigation-button:focus, .user-review .navigation-button:active {
@@ -301,16 +348,24 @@ body {
     transition: 0.5s;
 }
 .user-cards-div {
+    overflow: hidden;
+}
+
+.user-cards-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: relative;
+    left: 0%;
     height: 225px;
     margin-top: 20px;
+    width: 200%;
+    list-style: none;
+    transition: left 0.5s
 }
 .user-card {
     background-color: white;
-    width: 30%;
+    width: 16%;
     border-radius: 1.5em;
-    display: flex;
 }
 .user-card img {
     height: 60px;
@@ -319,24 +374,25 @@ body {
 .user-card h3 {
     font-weight: 600;
     font-size: 16px;
-    margin: 25px 10px 5px 95px;
-    position: absolute;
+    margin: -75px 0 0 95px;
+    width: 600px;
 }
 .user-card h4 {
     font-weight: 500;
     font-size: 12px;
-    margin: 55px 10px 5px 95px;
-    position: absolute;
+    margin: 5px 0 0 95px;
     color: #a3a3a3;
 }
 .user-card p {
     font-size: 12px;
-    margin: 95px 10px 30px -70px;
+    margin: 15px 15px 0 30px;
     line-height: 1.7;
+    color: black;
 }
 .button-archive {
+    margin: 10px 0 0 20px;
     position: absolute;
-    margin: 185px 0 0 15px;
+    bottom: 15px;
     border: none;
     cursor: pointer;
     color: #ff5b5b;
@@ -350,8 +406,9 @@ body {
 }
 
 .button-accept {
+    margin: 10px 0 0 100px;
     position: absolute;
-    margin: 185px 0 0 80px;
+    bottom: 15px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -364,9 +421,10 @@ body {
     font-size: 12px;
 }
 .button-published {
-    display: flex;
     position: absolute;
-    margin: 185px 0 0 20px;
+    bottom: 15px;
+    display: flex;
+    margin: 10px 0 0 20px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -402,6 +460,7 @@ body {
 
 .left-sidebar {
     width: 250px;
+    height: 1390px;
     position: absolute;
     background-color: white;
     border-radius: 2em;
@@ -427,6 +486,7 @@ body {
     width: 100%;
     height: 100px;
     margin-top: 20px;
+    margin-left: -10px;
     display: flex;
 }
 .logo-text {
@@ -445,40 +505,60 @@ body {
     padding-left: 35px;
 }
 
-
-.itens {
-    width: 80%;
-    margin: auto;
+.itens button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 200px;
     height: 60px;
-    padding-top: 10px;
-    margin-bottom: 8px;
     border-radius: 1.5em;
     transition: background-color 0.5s;
 }
+.itens button:focus, .itens button:active {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.itens ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.itens li {
+    height: 60px;
+}
+.itens {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    transition: background-color 0.5s;
+}
 
-.itens:hover {
+.itens button:hover {
     background-color: #ab54db30;
     color: #ab54db;
     transition: 0.5s;
 }
-.itens:hover svg {
+.itens button:hover svg {
     fill: #ab54db;
     transition: 0.5s;
 }
-.itens h3 {
+.itens a {
     font-size: 14px;
-    padding-top: 10px;
+    padding-top: 15px;
     font-weight: 500;
     color: black;
     transition: color 0.5s;
+    float: left;
 }
-.itens:hover h3 {
+.itens button:hover a {
     color: #ab54db;
     transition: 0.5s;
 }
 .itens svg {
     float: left;
-    margin: 8px 20px 6px 20px;
+    margin: 0px 20px 10px 20px;
     height: 24px;
     width: 24px;
     fill: #bdbebf;
@@ -488,10 +568,14 @@ body {
 .footer {
     padding: 40px 0px 40px 20px;
 }
-.footer p {
-    padding-top: 5px;
-    height: 40px;
+.footer h4 {
     font-size: 12px;
+    padding-left: 10px;
+}
+.footer p {
+    padding-top: 10px;
+    height: 30px;
+    font-size: 10px;
 }
 
 
@@ -504,11 +588,11 @@ body {
 .search {
     text-align: center;
     height: 50px;
-    width: 280px;
+    width: 290px;
     background: #eceaf3;
     border: none;
     border-radius: 1em;
-    margin-left: 30px;
+    margin-left: 25px;
     display: flex;
 }
 .search input[type=text] {
@@ -571,8 +655,8 @@ body {
 .problem-logo {
     background-color: white;
     border-radius: 1em;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -607,18 +691,54 @@ body {
 .latest-activity {
     margin-top: 30px;
 }
-.latest-activity img {
-    margin-top: 20px;
-    width: 95%;
-}
 .latest-activity h3 {
     font-weight: 600;
     margin-left: 10px;
 }
-.latest-activity h4 {
+.latest-activity h4, p {
     font-weight: 400;
     font-size: 12px;
+    padding-top: 5px;
     color: #a3a3a3;
     margin-left: 10px;
 }
+.latest-activity li {
+    list-style: none;
+}
 
+.timeline-description h4 {
+    margin-top: -22px;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.timeline-description p {
+    line-height: 22px;
+}
+.timeline li{
+    float: left;
+    margin-top: 14px;
+    margin-left: 15px;
+    position: relative; 
+    width: 98%;
+    padding: 0px 10px 30px 13px;
+    border-left: 1px solid #a3a3a3; 
+    box-sizing: border-box;
+}
+.timeline li:first-child{
+    margin-top: 40px;
+}
+.timeline li:last-child{
+    border-left: none; 
+}
+.timeline li:after{
+    content: ""; 
+    width: 8px; 
+    height: 8px; 
+    border: 3.5px solid #b160dd; 
+    position: absolute; 
+    top: -14px;
+    left: -8px; 
+    border-radius: 50%;
+}
