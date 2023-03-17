@@ -1,2 +1,2 @@
 # Projetos
-Projetos realizados durante os cursos e para praticar.
+Projetos realizados durante curso de frontend da udemy.
